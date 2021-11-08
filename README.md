@@ -68,6 +68,6 @@ You haven’t learned how to handle DELETE requests, but this application offers
 
 ## Deployed Application Link
 
-* https://carvasquez206.github.io/Express-NoteTaker/
+* https://carvasquez206.github.io/Express-NoteTaker/Develop/public/index.html
 
 ## Screenshot
