@@ -64,10 +64,10 @@ You haven’t learned how to handle DELETE requests, but this application offers
 ## Github Repository Link
 
 
-* The URL of the GitHub repository, with a unique name and a README describing the project.
+* https://github.com/carvasquez206/Express-NoteTaker
 
 ## Deployed Application Link
 
-* The URL of the functional, deployed application.
+* https://carvasquez206.github.io/Express-NoteTaker/
 
 ## Screenshot
