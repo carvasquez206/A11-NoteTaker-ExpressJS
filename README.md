@@ -1,4 +1,4 @@
-# Express-NoteTaker
+# A11-NoteTaker-ExpressJS
 
 ## Your Task
 
@@ -62,12 +62,9 @@ You haven’t learned how to handle DELETE requests, but this application offers
 
 
 ## Github Repository Link
-
-
-* https://github.com/carvasquez206/Express-NoteTaker
+- https://github.com/carvasquez206/Express-NoteTaker
 
 ## Deployed Application Link
-
-* https://carvasquez206.github.io/Express-NoteTaker/Develop/public/index.html
+- https://carvasquez206.github.io/Express-NoteTaker/Develop/public/index.html
 
 ## Screenshot
