@@ -1,4 +1,6 @@
+//dependencies
 const express = require('express');
+const fs = require('fs');
 const path = require('path');
-const { clog } = require('./middleware/clog');
-const api = require('./routes/index.js');
+
+//
