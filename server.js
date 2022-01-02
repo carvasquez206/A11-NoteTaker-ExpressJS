@@ -10,11 +10,12 @@ const app = express();
 // Parsing
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
+//dir_name is the full directory name on our computer
 app.use(express.static(__dirname));
 
 // Route/ make sure this works
-app.get('./routes/routes.js', (req, res) =>
-  res.sendFile(path.join(__dirname, './public/index.html'))
+app.get('/routes/routes.js', (req, res) =>
+  res.sendFile(path.join(__dirname, '/public/index.html'))
 );                                   ///public/index.html
 
 // set up a Listener
