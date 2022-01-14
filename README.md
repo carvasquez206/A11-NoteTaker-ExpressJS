@@ -1,4 +1,4 @@
-# A11-NoteTaker-ExpressJS
+# NoteTaker-ExpressJS
 
 ## Your Task
 
