@@ -1,4 +1,5 @@
 # NoteTaker-ExpressJS
+- A note taking app that allows you to add notes and delete(adding this soon..) them using Node and ExpressJS
 
 ## User Story
 
