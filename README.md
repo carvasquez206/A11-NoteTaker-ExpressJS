@@ -1,6 +1,11 @@
 # NoteTaker-ExpressJS
 - A note taking app that allows you to add notes and delete(adding this soon..) them using Node and ExpressJS
 
+## Installations
+- Run `npm i`: to download dependencies
+- Run `node server.js`: to run app in the terminal
+
+
 ## User Story
 
 ```
