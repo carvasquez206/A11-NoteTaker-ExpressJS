@@ -1,7 +1,7 @@
-const express = require('express');
-const fs = require('fs');
-const path = require('path');
-const util = require('util');
+const express = require("express");
+const path = require("path");
+const fs = require("fs");
+const util = require("util");
 
 //Asynchronous Processes
 const readFileAsync = util.promisify(fs.readFile);
@@ -9,7 +9,7 @@ const writeFileAsync = util.promisify(fs.writeFile);
 
 //Server
 const app = express();
-const PORT = process.env.port || 3001; //will change this to 8000 for Heroku
+const PORT = process.env.Port || 3001; //will change this to 8000 for Heroku
 
 // Parsing
 app.use(express.json());
@@ -20,12 +20,12 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.static("./public"));
 
 //API Route | "GET" request
-app.post("/api/notes", function(req,res){
+app.get("/api/notes", function(req, res) {
   readFileAsync("./db/db.json", "utf8").then(function(data) {
-    notes = [].concat(JSON.parse(data))
-    res.json(notes);
-  })
-});
+      notes = [].concat(JSON.parse(data))
+      res.json(notes);
+    })
+}); 
 
 //API Route | "POST" request
 app.post("/api/notes", function(req,res){
@@ -41,25 +41,20 @@ app.post("/api/notes", function(req,res){
   })
 });
 
-//API Route | "Delete" request
-
-
-
-
 //routes
-app.get("/notes", function(req, res){
-  res.sendFile(path.join(__dirname, ".public/index.html"));
-});
+app.get("/notes", function(req, res) {
+  res.sendFile(path.join(__dirname, "./public/notes.html"));
+  });
 
-app.get("/", function(req, res){
-  res.sendFile(path.join(__dirname, ".public/index.html"));
-});
+app.get("/", function(req, res) {
+     res.sendFile(path.join(__dirname, "./public/index.html"));
+  });
 
-app.get("*", function(req, res){
-  res.sendFile(path.join(__dirname, ".public/index.html"));
-});
+  app.get("*", function(req, res) {
+    res.sendFile(path.join(__dirname, "./public/index.html"));
+ });
 
 // Listening Port
 app.listen(PORT, function() {
-  console.log(`App listening at http://localhost:${PORT}`)
+  console.log("App listening on PORT " + PORT);
 });
