@@ -46,9 +46,20 @@ app.post("/api/notes", function(req,res){
 
 
 
+//routes
+app.get("/notes", function(req, res){
+  res.sendFile(path.join(__dirname, ".public/index.html"));
+});
 
+app.get("/", function(req, res){
+  res.sendFile(path.join(__dirname, ".public/index.html"));
+});
 
-// Port
+app.get("*", function(req, res){
+  res.sendFile(path.join(__dirname, ".public/index.html"));
+});
+
+// Listening Port
 app.listen(PORT, function() {
   console.log(`App listening at http://localhost:${PORT}`)
 });
