@@ -26,37 +26,17 @@ WHEN I click on the Write icon in the navigation at the top of the page
 THEN I am presented with empty fields to enter a new note title and the note’s text in the right-hand column
 ```
 
-
-## Getting Started
-
-On the back end, the application should include a `db.json` file that will be used to store and retrieve notes using the `fs` module.
-
-The following HTML routes should be created:
-
-* `GET /notes` should return the `notes.html` file.
-
-* `GET *` should return the `index.html` file.
-
-The following API routes should be created:
-
-* `GET /api/notes` should read the `db.json` file and return all saved notes as JSON.
-
-* `POST /api/notes` should receive a new note to save on the request body, add it to the `db.json` file, and then return the new note to the client. You'll need to find a way to give each note a unique id when it's saved (look into npm packages that could do this for you).
-
-
-## Bonus: +10 Points
-
-* Application allows users to delete notes.
-
-You haven’t learned how to handle DELETE requests, but this application offers that functionality on the front end. As a bonus, try to add the DELETE route to the application using the following guideline:
-
-* `DELETE /api/notes/:id` should receive a query parameter that contains the id of a note to delete. To delete a note, you'll need to read all notes from the `db.json` file, remove the note with the given `id` property, and then rewrite the notes to the `db.json` file.
-
-
 ## Github Repository Link
 - https://github.com/carvasquez206/Express-NoteTaker
 
 ## Deployed Application Link
 - https://carvasquez206.github.io/Express-NoteTaker/Develop/public/index.html
 
-## Screenshot
+### Screenshots
+![NoteTakerHome](https://user-images.githubusercontent.com/63617482/150764249-f596e712-9d0d-4c62-b722-eac99c31b055.png)
+
+
+![Notes](https://user-images.githubusercontent.com/63617482/150764364-76e710ab-bfe6-4708-b254-aac6af8d6785.png)
+
+
+
