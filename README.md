@@ -32,8 +32,8 @@ WHEN I click on the Write icon in the navigation at the top of the page
 THEN I am presented with empty fields to enter a new note title and the note’s text in the right-hand column
 ```
 
-## Github Repository Link
-- https://github.com/carvasquez206/Express-NoteTaker
+## Github Repository
+- https://github.com/carvasquez206/NoteTaker-ExpressJS
 
 ## Heroku
 - https://note-taker-expresso.herokuapp.com/
