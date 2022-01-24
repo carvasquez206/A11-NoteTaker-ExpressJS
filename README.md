@@ -38,6 +38,9 @@ THEN I am presented with empty fields to enter a new note title and the note’s
 ## Deployed Application Link
 - https://carvasquez206.github.io/Express-NoteTaker/Develop/public/index.html
 
+## Heroku
+- https://note-taker-expresso.herokuapp.com/
+
 ### Screenshots
 ![NoteTakerHome](https://user-images.githubusercontent.com/63617482/150764249-f596e712-9d0d-4c62-b722-eac99c31b055.png)
 
