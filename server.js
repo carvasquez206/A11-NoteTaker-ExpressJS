@@ -9,7 +9,7 @@ const writeFileAsync = util.promisify(fs.writeFile);
 
 //Server
 const app = express();
-const PORT = process.env.Port || 3001; //will change this to 8000 for Heroku
+const PORT = process.env.PORT || 3001; //.listen(process.env.PORT || 5000)
 
 // Parsing
 app.use(express.json());
@@ -55,6 +55,6 @@ app.get("/", function(req, res) {
  });
 
 // Listening Port
-app.listen(PORT, function() {
+app.listen(PORT, "0.0.0.0", function() {
   console.log("App listening on PORT " + PORT);
 });
