@@ -9,7 +9,7 @@ const writeFileAsync = util.promisify(fs.writeFile);
 
 //Server
 const app = express();
-const PORT = process.env.PORT || 3001; //.listen(process.env.PORT || 5000)
+const PORT = process.env.PORT || 3001;
 
 // Parsing
 app.use(express.json());
@@ -54,7 +54,7 @@ app.get("/", function(req, res) {
     res.sendFile(path.join(__dirname, "./public/index.html"));
  });
 
-// Listening Port
+// Listening Port.  // Adding "0.0.0.0" fixed my port issue with Heroku
 app.listen(PORT, "0.0.0.0", function() {
   console.log("App listening on PORT " + PORT);
 });
