@@ -43,5 +43,5 @@ THEN I am presented with empty fields to enter a new note title and the note’s
 - https://github.com/carvasquez206/NoteTaker-ExpressJS
 
 ## Heroku
-- https://note-taker-expresso.herokuapp.com/
+- https://note-taker-expresso.herokuapp.com
 
